@@ -1,0 +1,38 @@
+section {
+    width: 180px;
+    padding: 10px;
+    margin: 0px 5px 5px 20px;
+    border: 1px dotted gray;
+    background-color: yellow;
+}
+
+.operation {
+    width: 90px;
+    padding: 10px;
+    margin: 0px 5px 5px 20px;
+    border: 1px dotted transparent;
+    background-color: transparent;
+    text-align: center;
+}
+
+
+main {
+    font-family: sans-serif;
+    width: 90%;
+    padding: 10px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+}
+input {
+    text-align: right;
+}
+
+input[type='image'] {
+    margin-top: 2.5rem;
+}
+
+input[type='image'] {
+    width: 40px;
+    height: auto;
+}

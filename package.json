@@ -1,0 +1,23 @@
+{
+  "name": "javascript_bootcamp",
+  "version": "1.0.0",
+  "description": "Learning JavaScript Programming",
+  "main": "index.js",
+  "scripts": {
+    "puzzleserver": "node 81_Puzzleserver/02_Excercise/server.js",
+    "schoolserver": "node 82_Schoolserver/02_Excercise/server.js",
+  },
+  "keywords": [
+    "Mediamatiker",
+    "ICT-07",
+    "javascript",
+    "bootcamp"
+  ],
+  "author": "daniel.garavaldi@bzz.ch",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.27.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1"
+  }
+}

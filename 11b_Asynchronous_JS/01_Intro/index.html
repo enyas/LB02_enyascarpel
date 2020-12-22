@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- <meta http-equiv="refresh" content="5">-->
+    <title>Asynchronous JS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+</head>
+<body>
+<section id="manufsec">
+    <h1>Our partner for guitar gear</h1>
+    <h2 id="data1" class="animate__animated"></h2>
+</section>
+
+<script src="request.js"></script>
+<script src="requestCB.js"></script>
+<script src="app.js"></script>
+
+<script>
+    //https://animate.style/
+    const animationTypes = ['animate__tada','animate__rubberBand', 'animate__flash', 'animate__wobble', 'animate__swing'];
+    const animationSpeed = ['animate__slow','animate__slower', 'animate__fast', 'animate__faster'];
+
+    let randAnimTypes;
+    let randAnimSpeed;
+
+        //Zufallsgenerator
+        randAnimTypes = Math.floor(Math.random() * animationTypes.length);
+        randAnimSpeed = Math.floor(Math.random() * animationSpeed.length);
+
+        //Zuweisung der Animation an data1-Element
+        document.querySelector('#data1').classList.add('animate__animated',
+            animationTypes[randAnimTypes], animationSpeed[randAnimSpeed]);
+</script>
+
+</body>
+</html>

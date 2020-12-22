@@ -1,0 +1,12 @@
+{
+  "company": [{
+      "id": 101, "name": "Swisscom", "contact": "Steven Walsh", "phone": 0794112000, "email": "steven.walsh@swisscom.com",
+      "url": "www.swisscom.com", "profession": ["Mediamatiker","Applikationsentwickler", "Inter Active Media Designer"]
+    }, {
+      "id": 102, "name": "Migros", "contact": "Lars Funkel", "phone": 0794112003, "email": "lars.funkel@migros.ch",
+      "url": "www.migros.ch", "profession": ["Kaufmann/frau","Applikationsentwickler"],
+    , {
+    "id": 103, "name": "SBB", "contact": "Karin Steinhausen", "phone": 0794112002, "email": "karin.steinhausen@sbb.ch",
+    "url": "www.sbb.ch", "profession": ["Billetkontrolleur/in","Gleisbauer"]
+    }]
+  }

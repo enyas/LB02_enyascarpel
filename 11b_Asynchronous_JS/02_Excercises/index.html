@@ -1,0 +1,59 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- <meta http-equiv="refresh" content="5">-->
+    <title>Asynchronous JS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+</head>
+<body>
+<section id="manufsec">
+    <h1>Our partner for guitar gear</h1>
+    <h2 id="data1" class="animate__animated"></h2>
+</section>
+
+<!--
+Aufgabe 1
+a. Fügen Sie eine zusätzliche <section>, ähnlich wie manufsec,
+    jedoch für die Kategorien. Wählen Sie selber eine section-id
+b. id im <h2> muss data2 sein
+-->
+
+<section id="catsec">
+    <h1>Guitar models</h1>
+    <h2 id="data2" class="animate__animated"></h2>
+</section>
+
+<script src="requestCB.js"></script>
+<script src="requestCBcat.js"></script>
+<script src="app.js"></script>
+
+<script>
+    //https://animate.style/
+    const animationTypes = ['animate__tada','animate__rubberBand', 'animate__flash', 'animate__wobble', 'animate__swing'];
+    const animationSpeed = ['animate__slow','animate__slower', 'animate__fast', 'animate__faster'];
+
+/*
+Aufgabe 2
+a. Auch der Inhalt von data2 soll - wie data1 - per Zufallsgenerator animiert werden.
+b. Versuchen Sie den Code nicht zu duplizieren, sondern arbeiten Sie mit
+einem Loop, z.B. for-loop (advanced)
+*/
+
+    let randAnimTypes;
+    let randAnimSpeed;
+
+    randAnimTypes = Math.floor(Math.random() * animationTypes.length);
+    randAnimSpeed = Math.floor(Math.random() * animationTypes.length);
+    document.querySelector('#data1').classList.add('animate__animated',
+        animationTypes[randAnimTypes], animationSpeed[randAnimSpeed]);
+
+
+    randAnimTypes = Math.floor(Math.random() * animationTypes.length);
+    randAnimSpeed = Math.floor(Math.random() * animationTypes.length);
+    document.querySelector('#data2').classList.add('animate__animated',
+        animationTypes[randAnimTypes], animationSpeed[randAnimSpeed]);
+
+</script>
+
+</body>
+</html>
